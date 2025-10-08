@@ -1,0 +1,65 @@
+{
+  "name": "Daccurso Digital Marketing | Digital Marketing Services",
+  "short_name": "DDM",
+  "description": "Showcasing my projects and services in web development, digital marketing, and creating engaging, SEO-driven blog posts using keyword research.",
+  "start_url": "/about-me",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d2242",
+  "theme_color": "#0d2242",
+  "orientation": "portrait",
+  "categories": ["business", "web development", "digital marketing", "web design", "content creation"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://bvevrurqtidadhfsuoee.supabase.co/storage/v1/object/public/media//apple-touch-icon.png",
+      "sizes": "218x218",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://bvevrurqtidadhfsuoee.supabase.co/storage/v1/object/public/media//favicon-32x32.png",
+      "sizes": "39x39",
+      "type": "image/png"
+    },
+    {
+      "src": "https://bvevrurqtidadhfsuoee.supabase.co/storage/v1/object/public/media//favicon-16x16.png",
+      "sizes": "20x20",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About Me",
+      "url": "/about-me",
+      "description": "Learn more about me"
+    },
+    {
+      "name": "My Projects",
+      "url": "/my-projects",
+      "description": "View my projects"
+    },
+    {
+      "name": "My Services",
+      "url": "/my-services",
+      "description": "Browse my services"
+    },
+    {
+      "name": "My Skills",
+      "url": "/my-skills",
+      "description": "See my skills"
+    },
+    {
+      "name": "Contact Me",
+      "url": "/contact-me",
+      "description": "Get in touch"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,5 @@
+allow_net = [
+  "query1.finance.yahoo.com",
+  "www.alphavantage.co",
+  "financialmodelingprep.com"
+]

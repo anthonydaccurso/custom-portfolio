@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card-height: 220px;
+}
+
+/* Modern viewport height handling */
+html, body, #root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #0d2242;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  font-display: swap;
+}
+
+/* Modern safe area handling */
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Optimized font loading */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2) format('woff2');
+  font-named-instance: 'Regular';
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aXp-p7K4KLg.woff2) format('woff2');
+  font-named-instance: 'Medium';
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aXp-p7K4KLg.woff2) format('woff2');
+  font-named-instance: 'SemiBold';
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXp-p7K4KLg.woff2) format('woff2');
+  font-named-instance: 'Bold';
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Base styles */
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+p, h1, h2, h3, input, textarea {
+  user-select: text;
+}
+
+/* Ensure consistent button sizing and touch targets */
+button, a {
+  min-height: 22px;
+  min-width: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+/* Business card link styles with improved touch targets */
+.text-white a {
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  min-width: 22px;
+  min-height: 22px;
+  transition: background-color 0.2s ease-in-out;
+  touch-action: manipulation;
+}
+
+.text-white a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-white a:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Prevent layout shifts */
+.section-transition {
+  min-height: var(--card-height);
+  transition: all 0.3s ease-in-out;
+  will-change: transform;
+}
+
+/* Improve accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.contact-item {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .email-me {
+    display: none;
+  }
+}

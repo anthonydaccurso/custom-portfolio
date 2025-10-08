@@ -1,0 +1,8 @@
+<!-- Icon Links -->
+<link rel="icon" type="image/svg+xml" href="https://flextech.fit/favicon.svg">
+<link rel="icon" type="image/png" href="https://flextech.fit/favicon.ico">
+<link rel="apple-touch-icon" href="https://flextech.fit/apple-touch-icon-1080x1080.png"> <!-- Updated size -->
+<link rel="icon" type="image/png" sizes="96x96" href="https://flextech.fit/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://flextech.fit/web-app-manifest-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://flextech.fit/web-app-manifest-512x512.png">
+<link rel="manifest" href="https://flextech.fit/site.webmanifest">

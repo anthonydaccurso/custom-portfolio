@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Allow: /about-me
+Allow: /my-projects
+Allow: /my-services
+Allow: /my-skills
+Allow: /contact-me
+Allow: /favicon.ico
+Allow: /favicon-32x32.png
+Allow: /favicon-16x16.png
+Allow: /favicon.svg
+Allow: /apple-touch-icon.png
+Allow: /manifest.json
+Allow: /sitemap.xml
+
+# Prevent pages from appearing in search results while allowing crawling
+Noindex: /about-me
+Noindex: /my-projects
+Noindex: /my-services
+Noindex: /my-skills
+Noindex: /contact-me
+
+Sitemap: https://anthonydaccurso.com/sitemap.xml

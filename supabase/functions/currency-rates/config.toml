@@ -1,0 +1,5 @@
+allow_net = [
+  "api.exchangerate-api.com",
+  "openexchangerates.org",
+  "api.fixer.io"
+]
